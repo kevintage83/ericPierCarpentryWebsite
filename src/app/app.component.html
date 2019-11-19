@@ -1,21 +1,211 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Eric Pier Carpentry, LLC Main Website">
+    <meta name="keywords" content="Eric,Pier,Carpentry">
+    <meta name="author" content="Kevin W. Burns">
+    <meta name="contributors" content="Eric Pier">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+  
+    <title>
+      Eric Pier Carpentry, LLC
+    </title>
+</head>
+  
+<body>
 
-<router-outlet></router-outlet>
+  <div class="flexContainer">
+
+    <div class="header">
+      <a href="/">
+        <img src="../assets/ericPierLogo.png" class="ericPierLogo" alt="Eric Pier Logo">
+      </a>
+      <h1 class="webPageHeader">Eric Pier Carpentry, LLC</h1>
+      <h3 class="phoneNumber">
+        <img src="../assets/phoneLogo.png" class="phoneLogo" alt="Phone Logo"> &nbsp; &nbsp;
+        <a href="tel:732-977-6694">732-977-6694</a>
+      </h3>
+    </div>
+
+    <nav class="navbar">
+      <p><a href="#" class="navItem" style="margin-left: 1.5rem">Home</a></p>
+      <p><a href="#ourServices" class="navItem">Services</a></p>
+      <p><a href="#aboutUs" class="navItem">About</a></p>
+      <p><a href="#contactForm" class="navItem">Contact</a></p>
+    </nav>
+
+    <div class="mainImageHeadlineDiv">
+      <h1 class="mainImageHeadline"><em>"Top Notch Carpentry"</em></h1>
+    </div>
+
+    <img class="mainImage" src="../assets/homeExteriorBackgroundImage.png" alt="House">
+
+    <div class="ourCustomers">
+      <h2 style="text-align:center">Our customers highly recommend our carpentry and remodeling services</h2>
+      <p>
+        There are numerous features throughout a property that add character and appeal to enhance the overall look and feel. Even small changes can make a big difference in renewing the design and functionality of spaces. When you're ready to update
+        parts of your home or building, Eric Pier Carpentry guarantees all work and has earned excellent reviews on multiple rating sites. We are committed to finishing every job on time and within your budget.
+      </p>
+      <div id="ourServices"></div>
+    </div>
+
+    <div class="ourServicesHeader">
+      <h1>Our Services</h1>
+    </div>
+    
+    <div class="servicesImagesContainer">
+      
+      <div class="servicesImage4" (click)="condition3 = !condition3">
+        <div>
+          <div class="outer">
+            <img src="../assets/nails.jpg" class="image" alt="Carpentry nails on wood" style="border-radius: 50;">
+            <div class="middle">
+              <div class="hoverText">CARPENTRY</div>
+            </div>
+          </div>
+          <p *appOurServices="!condition3" style="width:200px">
+            <b>CARPENTRY:</b> Need some carpentry work done? We handle all types of carpentry from frame to finish. Rest assured, we will get your job done on time, on spec and within budget. We're confident that you will be satisfied with the quality of our work.
+          </p>
+        </div>
+      </div>
+
+      <div class="servicesImage1" (click)="condition = !condition">
+        <div>
+          <div class="outer">
+            <img src="../assets/kitchenCabinets.jpg" class="image" alt="Cabinets in a kitchen">
+            <div class="middle">
+              <div class="hoverText">CABINETRY</div>
+            </div>
+          </div>
+          <p *appOurServices="!condition" style="width:210px">
+              <b>CUSTOM CABINETRY:</b> Have a cabinetry project? Whether it's new construction, a renovation or just simply a maintenance job, we will build, install, replace or repair your cabinets, fixtures and counters.
+          </p>
+        </div>
+      </div>
+        
+      <div class="servicesImage2" (click)="condition1 = !condition1">
+        <div>
+          <div class="outer">
+            <img src="../assets/electrical.jpeg" class="image" alt="Electrician cutting wire">
+            <div class="middle">
+              <div class="hoverText">ELECTRICAL</div>
+            </div>
+          </div>
+          <p *appOurServices="!condition1" style="width:210px">
+            <b>ELECTRICAL:</b> Whether you need a service upgrade, a new lighting system, breaker replacement or just some simple wiring repairs, we do it all. Whatever your needs may be, we have the licensed electrical professionals to handle the job quickly and efficiently.
+          </p>
+        </div>
+      </div>
+        
+      <div class="servicesImage3" (click)="condition2 = !condition2">
+        <div>
+          <div class="outer">
+            <img src="../assets/housePlumbing.jpg" class="image" alt="Plumbing pipes inside walls">
+            <div class="middle">
+              <div class="hoverText">PLUMBING</div>
+            </div>
+          </div>
+          <p *appOurServices="!condition2" style="width:200px">
+            <b>PLUMBING:</b> We can tackle any plumbing project you might have from new construction, remodelling and renovation to repair of broken and leaking pipes. No matter what your needs, you can depend on us to get your job done right!
+          </p>
+        </div>
+      </div>
+        
+      <div class="servicesImage5" (click)="condition4 = !condition4">
+        <div>
+          <div class="outer">
+            <img src="../assets/handyman.jpg" class="image" alt="Handyman with drill">
+            <div class="middle">
+              <div class="hoverText">HANDYMAN</div>
+            </div>
+          </div>
+          <p *appOurServices="!condition4" style="width:200px">
+            <b>HANDYMAN WORK:</b> We do it all big or small. We will be your ultimate handyman. Tell us what you would like and we'll get it done. There's nothing we can't handle.
+          </p>
+        </div>
+      </div>
+    </div>
+      
+    <div class="contactPageContainer">
+      <div class="reduceCostsHeader">
+        <div id="aboutUs"></div>
+        <h2><em>Reduce the costs of renovating your property through our discounts!</em></h2>
+      </div>
+      
+      <div class="contactPageContainer2">
+
+        <div class="aboutUs">
+          <h2 class="aboutUsHeader">About Us</h2>
+          <p class="aboutUsBody">With 100+ years of combined experience, Eric Pier Carpentry of Brick, New Jersey, is an insured carpenter and remodeling company offering a wide range of services for residential and commercial customers. From baseboards to roofs, we have the skills and
+            knowledge to complete many different projects with the end results meeting your total satisfaction. All of our crew members are required to undergo comprehensive training, and we warranty any work performed for added peace of mind.
+          </p>
+        </div>
+
+        <div class="phoneAndLogos">
+          <h2>Call: <br>
+            <a href="tel:732-977-6694">732-977-6694</a>
+          </h2>
+          <div class="imageCredentials">
+            <a href="https://www.angieslist.com">
+              <img src="../assets/angiesListLogo.png" class="angiesListLogo" alt="Angie's List Logo">
+            </a>
+            <a href="https://www.homeadvisor.com">
+              <img src="../assets/homeAdvisorApproved.png" class="homeAdvisorLogo" alt="Home Advisor Logo">
+            </a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contactUs" [formGroup]="clientProfileForm" (ngSubmit)="onSubmit()">
+          <h2>Contact Us</h2>
+          <input type="text" placeholder="First Name or Company (required)" formControlName="firstName" class="contactItem" id="fNameCName">
+          <input type="text" placeholder="Last Name" formControlName="lastName" class="contactItem" id="lName">
+          <input type="email" placeholder="Email" formControlName="email" class="contactItem" id="email">
+          <input type="text" placeholder="Phone (required)" formControlName="phoneNum" class="contactItem" id="clientPhone">
+          <textarea rows="4" cols="50" class="contactItem" placeholder="Comment" name="text" id="clientText"></textarea>
+          <button type="btn btn-primary submit" [disabled]="!clientProfileForm.valid" class="contactSubmitButton">Submit</button>
+        </form>
+
+        <script>
+          
+        $('form').on('submit', (e) => {
+          e.preventDefault();
+          
+          const fNameCName = $('#fNameCName').val().trim();
+          const lName = $('#lName').val().trim();
+          const email = $('#email').val().trim();
+          const clientPhone = $('#clientPhone').val().trim();
+          const subject = $('#clientText').val().trim();
+
+          const data = {
+            fNameCName,
+            lName,
+            email,
+            clientPhone,
+            subject
+          };
+
+          $.post('/email', data, function() {
+            console.log('Server received our data');
+          });
+        });
+        
+        
+        </script>
+
+      </div>
+
+      <p class="contractorCert">Contractor Certification: 13VH02503400</p>
+
+    </div>
+
+    <div class="footer">
+      <p class="hoursOfOperation">Hours of Operation<br>Monday-Saturday 7am-7pm<br>24-hours emergency services available!</p>
+      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fcategory%2FHome-Improvement%2FEric-Pier-LLC-673104689730331%2F&layout=button_count&size=large&width=91&height=28&appId" width="91" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" class="fbButton"></iframe>
+    </div>
+    <p class="copyrightSection"><strong>&copy;</strong> {{ currentYear }} Eric Pier Carpentry, LLC</p>
+    
+  </div>
+
+  <router-outlet></router-outlet>
+</body>
+  

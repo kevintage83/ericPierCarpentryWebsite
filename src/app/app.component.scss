@@ -1,0 +1,451 @@
+.flexContainer {
+  flex-wrap: wrap; 
+}
+
+.header {
+  display: flex;
+  background-color: #7f2323;
+  margin-bottom: 1px;
+  padding: .5rem;
+  flex-wrap: wrap;
+}
+
+.webPageHeader {
+  display: flex;
+  align-self: center;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding-left: 1em;
+}
+
+.phoneLogo {
+  display: flex;
+  align-self: center;
+  height: 2rem;
+}
+
+.phoneNumber {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-left: auto;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.navbar {
+  display: flex;
+  background-color: #7f2323;
+  margin-bottom: 1px;
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 3px 5px 15px;
+}
+
+.navItem {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.mainImage {
+  width: 100vw;
+}
+
+.mainImageHeadline {
+  display: flex;
+  justify-items: center;
+  margin-top: 10rem;
+  position: absolute;
+  text-align: center;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.mainImageHeadlineDiv {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.ourCustomers {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  background-color: rgb(139, 123, 79);
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding: 1rem;
+}
+
+.ourServicesHeader {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+}
+
+.servicesImagesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.outer {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  transition: .75s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .75s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.outer:hover .image {
+  opacity: 0.3;
+}
+
+.outer:hover .middle {
+  opacity: 1;
+}
+
+.hoverText {
+  background-color: rgb(109, 119, 109);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-shadow:
+  -.5px -.5px 0 #000,
+  .5px -.5px 0 #000,
+  -.5px .5px 0 #000,
+  .5px .5px 0 #000;
+}
+
+.servicesImage1 {
+  display: flex;
+  text-align: justify;
+  width: 230px;
+  img {
+    height: 150px;
+    box-shadow: 0 5px 15px;
+  }
+}
+
+.servicesImage2 {
+  display: flex;
+  text-align: justify;
+  width: 230px;
+  img {
+    height: 150px;
+    box-shadow: 0 5px 15px;
+  }
+}
+
+.servicesImage3 {
+  display: flex;
+  text-align: justify;
+  img {
+    height: 150px;
+    box-shadow: 0 5px 15px;
+  }
+}
+
+.servicesImage4 {
+  display: flex;
+  text-align: justify;
+  img {
+    height: 150px;
+    box-shadow: 0 5px 15px;
+  }
+}
+
+.servicesImage5 {
+  display: flex;
+  text-align: justify;
+  width: 230px;
+  img {
+    height: 150px;
+    box-shadow: 0 5px 15px;
+  }
+}
+
+.contactPageContainer {
+  background-image: url(../assets/woodFloorBackground.png);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.contactSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactPageContainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.reduceCostsHeader {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  flex: 1;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding: 1rem;
+  text-align: center;
+}
+
+.aboutUs {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  flex: 2;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: justify;
+}
+
+.phoneAndLogos {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  flex: 1;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding: 1rem;
+}
+
+.imageCredentials {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.angiesListLogo {
+  width: 10rem;
+  height: auto;
+  float: left;
+}
+
+.homeAdvisorLogo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 12rem;
+  height: auto;
+  flex-direction: row;
+}
+
+.contactUs {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  flex: 2;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding: 1rem;
+}
+
+.contactItem {
+  padding: .5rem;
+  margin: .5rem;
+  box-shadow: 5px 5px 15px;
+}
+
+.contactSubmitButton {
+  padding: .5rem;
+  margin-left: .5rem;
+  margin-top: .5rem;
+  width: 5rem;
+  border-radius: .5rem;
+}
+
+.contractorCert {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding-left: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: .5rem;
+  margin-top: 4px;
+  flex-wrap: wrap;
+  justify-items: space-evenly;
+}
+
+.hoursOfOperation {
+  display: flex;
+}
+
+.fbButton {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  position: absolute;
+  right: 15px;
+}
+
+.copyrightSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+a[href^="tel"] {
+  color: white;
+  text-decoration: none;
+}
+
+@media all and (max-width: 350px) {
+  .header {
+    width: cover;
+  }
+
+  .contactPageContainer2>div {
+    flex: 1 1 150%;
+    justify-content: center;
+  }
+
+  .imageCredentials>a {
+    flex: 1 1 100%;
+    justify-content: left;
+  }
+
+  .aboutUsBody {
+    width: 100%;
+  }
+
+  .reduceCostsHeader {
+    width: 100%;
+    align-self: left;
+    padding: 0px;
+  }
+
+  .aboutUs {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .contactItem {
+    width: 100%;
+    margin: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+
+  .contactUs {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .header {
+    width: cover;
+  }
+
+  .contactPageContainer2>div {
+    flex: 1 1 150%;
+    justify-content: center;
+  }
+
+  .imageCredentials>a {
+    flex: 1 1 100%;
+    justify-content: left;
+  }
+
+  .aboutUsBody {
+    width: 100%;
+  }
+
+  .reduceCostsHeader {
+    width: 100%;
+    align-self: left;
+    padding: 0px;
+  }
+
+  .aboutUs {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .contactItem {
+    width: 98%;
+    margin: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .contactUs {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .servicesImagesContainer {
+    flex-wrap: wrap;
+  }
+
+  .servicesImagesContainer>div {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+}
